@@ -1,0 +1,33 @@
+---
+title: "Test_Blog_1"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(palmerpenguins)
+library(tidyverse)
+library(knitr)
+library(dplyr)
+```
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+data <- view(penguins)
+
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(data, aes(x = body_mass_g, y = flipper_length_mm)) + geom_point()
+
+```
+
+
